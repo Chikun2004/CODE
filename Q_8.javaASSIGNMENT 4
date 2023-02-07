@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+public class Q_8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		    int user,comp_guess;
+		    Scanner sc=new Scanner(System.in);
+		    while(true)
+		    {
+		    comp_guess=1+(int)(10*Math.random());
+		   
+		    System.out.print("Enter the number:");
+		    user=sc.nextInt();
+		    System.out.println("comp guess:"+comp_guess);
+		    System.out.println("user guess:"+user);
+		    
+		    if(user==comp_guess)
+		    {
+		    	System.out.println("good");
+		    	break;
+		    }
+		    else if(user>comp_guess)
+		    	System.out.println("too high.try again");
+		    else
+		    	System.out.println("too low.try again");
+	  }
+   }
+}

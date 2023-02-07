@@ -1,0 +1,20 @@
+
+public class Q_9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          int n=10200,rem,new_no=0,i=0;
+          while(n!=0)
+          {
+        	  rem=n%10;
+        	  if(rem!=0)
+        	  {
+        		  new_no=new_no+rem*(int)Math.pow(10, i);
+        		  i++;
+        	  }
+        	  n=n/10;
+          }
+          System.out.println(new_no);
+	}
+
+}
